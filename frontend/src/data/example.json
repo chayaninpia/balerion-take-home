@@ -1,0 +1,72 @@
+{
+  "subOrders": [
+    {
+      "id": "ORDER-0001-001",
+      "orderId": "ORDER-0001",
+      "itemId": "Item-1",
+      "warehouseId": "WH-001",
+      "supplierId": "SP-001",
+      "request": 11,
+      "type": "DAILY",
+      "createdAt": 1735689600000,
+      "customerId": "CT-0001"
+    },
+    {
+      "id": "ORDER-0001-002",
+      "orderId": "ORDER-0001",
+      "itemId": "Item-2",
+      "warehouseId": "WH-002",
+      "supplierId": "SP-000",
+      "request": 20,
+      "type": "DAILY",
+      "createdAt": 1735689600000,
+      "customerId": "CT-0001"
+    },
+    {
+      "id": "ORDER-0002-001",
+      "orderId": "ORDER-0002",
+      "itemId": "Item-1",
+      "warehouseId": "WH-001",
+      "supplierId": "SP-002",
+      "request": 300,
+      "type": "EMERGENCY",
+      "createdAt": 1735862400000,
+      "customerId": "CT-0002",
+      "remark": "Special for VIP"
+    },
+    {
+      "id": "ORDER-0002-002",
+      "orderId": "ORDER-0002",
+      "itemId": "Item-2",
+      "warehouseId": "WH-000",
+      "supplierId": "SP-000",
+      "request": 100,
+      "type": "EMERGENCY",
+      "createdAt": 1735862400000,
+      "customerId": "CT-0002",
+      "remark": "Special for VIP"
+    }
+  ],
+  "stock": [
+    { "itemId": "Item-1", "warehouseId": "WH-001", "supplierId": "SP-001", "quantity": 120 },
+    { "itemId": "Item-1", "warehouseId": "WH-001", "supplierId": "SP-002", "quantity": 150 },
+    { "itemId": "Item-2", "warehouseId": "WH-001", "supplierId": "SP-001", "quantity": 40 },
+    { "itemId": "Item-2", "warehouseId": "WH-002", "supplierId": "SP-001", "quantity": 60 },
+    { "itemId": "Item-2", "warehouseId": "WH-002", "supplierId": "SP-002", "quantity": 25 }
+  ],
+  "prices": [
+    { "itemId": "Item-1", "supplierId": "SP-001", "price": 123.49 },
+    { "itemId": "Item-1", "supplierId": "SP-002", "price": 118.2 },
+    { "itemId": "Item-2", "supplierId": "SP-001", "price": 99.75 },
+    { "itemId": "Item-2", "supplierId": "SP-002", "price": 104.3 }
+  ],
+  "customers": [
+    { "id": "CT-0001", "name": "Siam Seafood", "creditLimit": 5000 },
+    { "id": "CT-0002", "name": "Nordic Foods", "creditLimit": 40000 }
+  ],
+  "tierMultipliers": {
+    "EMERGENCY": 1.25,
+    "OVER_DUE": 1,
+    "DAILY": 0.9
+  }
+}

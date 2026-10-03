@@ -1,0 +1,54 @@
+@layer theme, base, mui, components, utilities;
+@import 'tailwindcss';
+
+@theme {
+  --color-canvas: #f8f9fa;
+  --color-surface: #ffffff;
+  --color-line: #dadce0;
+  --color-line-soft: #e8eaed;
+  --color-ink: #202124;
+  --color-muted: #5f6368;
+  --color-faint: #80868b;
+  --color-hover: #f1f3f4;
+  --color-google: #1a73e8;
+  --color-google-deep: #174ea6;
+  --color-google-soft: #e8f0fe;
+  --color-google-ink: #1967d2;
+  --color-good: #137333;
+  --color-good-soft: #e6f4ea;
+  --color-good-bar: #34a853;
+  --color-warn: #b06000;
+  --color-warn-soft: #fef7e0;
+  --color-warn-bar: #f9ab00;
+  --color-bad: #c5221f;
+  --color-bad-soft: #fce8e6;
+  --color-manual: #7627bb;
+  --color-manual-soft: #f3e8fd;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+html {
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  background: var(--color-canvas);
+  color: var(--color-ink);
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.nums {
+  font-variant-numeric: tabular-nums;
+}
+
+:where(button, input, select, [tabindex]):focus-visible {
+  outline: 2px solid var(--color-google);
+  outline-offset: 1px;
+}
